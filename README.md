@@ -1,27 +1,50 @@
 🎨 Frontend (React + TailwindCSS)
-5 halaman utama:
+Aplikasi frontend ini memiliki 5 halaman utama:
 
-Home (hero section & deskripsi)
+🏠 Home
+Hero section
 
-User List (lihat semua user, dengan fitur pencarian)
+Deskripsi singkat aplikasi
 
-Add User (form tambah user baru)
+👥 User List
+Melihat semua data user
 
-Edit & Hapus user
+Fitur pencarian (live search)
 
-About (Tentang Aplikasi)
+➕ Add User
+Form untuk menambahkan user baru
 
-Contact (Berisi Link kontak saya: Email, Github, Whatsapp)
+✏️ Edit & 🗑️ Delete User
+Halaman edit data user
 
-UI responsif (mobile, tablet, desktop)
+Fitur hapus user
 
-Reusable Layout: Header + Footer di semua halaman
+ℹ️ About
+Informasi tentang aplikasi
+
+📞 Contact
+Berisi link kontak saya:
+Email | GitHub | WhatsApp
+
+💎 Fitur Lainnya
+💻 UI responsif (Mobile, Tablet, Desktop)
+
+♻️ Reusable Layout: Header dan Footer muncul di semua halaman
 
 🛠️ Cara Menjalankan di Lokal
 
+# 1. Clone repository
 git clone https://github.com/abdulrouff10/rouf-frontend.git
+
+# 2. Masuk ke folder proyek
 cd rouf-frontend
+
+# 3. Install dependencies
 npm install
-# buat file .env
+
+# 4. Buat file .env dan tambahkan URL API backend
 echo "REACT_APP_API_URL=http://127.0.0.1:8000/api" > .env
+
+# 5. Jalankan aplikasi
 npm run dev
+
