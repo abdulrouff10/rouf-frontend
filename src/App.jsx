@@ -12,27 +12,27 @@ function App() {
   return (
     <Router>
       <div
-  className="min-h-screen flex flex-col bg-cover bg-no-repeat bg-fixed relative"
-  style={{ backgroundImage: "url('/kantor.jpg')" }}>
-    <div className="relative z-5 flex flex-col flex-grow">
-        <Header />
-        <main className="flex-grow container mx-auto p-4 flex">
-          
-          <div className="grid grid-cols-1 w-full ">
-          <div className="bg-violet-50/80 shadow-xl rounded-2xl p-6 col-span-1">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/users" element={<UserListPage />} />
-            <Route path="/add" element={<AddUserPage />} />
-            <Route path="/edit/:id" element={<EditUserPage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          </div>
-          </div>
-        </main>
-        <Footer />
-      </div>
+        className="min-h-screen flex flex-col bg-cover bg-no-repeat bg-fixed relative"
+        style={{ backgroundImage: "url('/kantor.jpg')" }}>
+        <div className="relative z-5 flex flex-col flex-grow">
+          <Header />
+          <main className="flex-grow container mx-auto p-4 flex">
+
+            <div className="grid grid-cols-1 w-full ">
+              <div className="bg-violet-50/80 shadow-xl rounded-2xl p-6 col-span-1">
+                <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/users" element={<UserListPage />} />
+                  <Route path="/add" element={<AddUserPage />} />
+                  <Route path="/edit/:id" element={<EditUserPage />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                </Routes>
+              </div>
+            </div>
+          </main>
+          <Footer />
+        </div>
       </div>
     </Router>
   );

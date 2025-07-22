@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="min-h-[calc(100vh-100px)] flex flex-col justify-center items-center py-10 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-[calc(100vh-100px)] flex flex-col  items-center py-20 px-4 sm:px-6 lg:px-8">
 
       <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-pink-400 mb-4 drop-shadow-sm">
         Kontak Saya
@@ -11,16 +11,16 @@ const Contact = () => {
         Jika kamu memiliki pertanyaan atau ingin tahu lebih banyak tentang proyek ini, silakan hubungi saya melalui:
       </p>
 
-      <ul className="mt-6 text-left max-w-md mx-auto space-y-4"> 
-        <li className="flex items-center text-gray-800 text-lg"> 
+      <ul className="mt-6 text-left max-w-md mx-auto space-y-4">
+        <li className="flex items-center text-gray-800 text-lg">
           <svg className="w-6 h-6 mr-3 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
           <strong>Email:</strong> <a href="mailto:abdulrouf010203@gmail.com" className="ml-2 text-blue-600 hover:text-blue-800 hover:underline transition duration-200">abdulrouf010203@gmail.com</a>
         </li>
         <li className="flex items-center text-gray-800 text-lg">
-          
+
           <svg
-            className="w-6 h-6 mr-3 text-violet-500" 
-            fill="currentColor" 
+            className="w-6 h-6 mr-3 text-violet-500"
+            fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -33,7 +33,7 @@ const Contact = () => {
           <strong>GitHub:</strong> <a href="https://github.com/abdulrouff10" target="_blank" rel="noopener noreferrer" className="ml-2 text-blue-600 hover:text-blue-800 hover:underline transition duration-200">github.com/abdulrouf10</a>
         </li>
         <li className="flex items-center text-gray-800 text-lg">
-        
+
           <svg
             className="w-6 h-6 mr-3 text-violet-500"
             fill="currentColor"

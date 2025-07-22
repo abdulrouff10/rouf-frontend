@@ -1,16 +1,15 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react'; // Import useState untuk mengelola state
+import { useState } from 'react';
 
 const Header = () => {
   const { pathname } = useLocation();
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State untuk mengontrol menu mobile
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLink = (to, label) => (
     <Link
       to={to}
-      className={`px-4 py-2 rounded hover:bg-pink-600 hover:text-white transition ${
-        pathname === to ? 'bg-pink-600 font-bold text-white' : 'font-semibold text-white'
-      }`}
+      className={`px-4 py-2 rounded hover:bg-pink-600 hover:text-white transition ${pathname === to ? 'bg-pink-600 font-bold text-white' : 'font-semibold text-white'
+        }`}
       onClick={() => setIsMenuOpen(false)}
     >
       {label}
@@ -19,12 +18,15 @@ const Header = () => {
 
   return (
     <header className="bg-gradient-to-r from-violet-800 to-pink-600 shadow-md">
-      
-      <div className="container mx-auto px-5 py-4 flex justify-start items-center relative gap-4"> 
-        
-        <h1 className="text-xl font-bold text-white z-10">Rouf Dev</h1> 
+
+      <div className="container mx-auto px-5 py-4 flex justify-start items-center relative gap-4">
+
+        <Link to="/" className="text-xl font-bold text-white z-10">
+          Rouf Dev
+        </Link>
+
         <button
-          className="lg:hidden text-white focus:outline-none z-10 absolute right-5" 
+          className="lg:hidden text-white focus:outline-none z-10 absolute right-5"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -52,8 +54,8 @@ const Header = () => {
           </svg>
         </button>
 
-        
-        <nav className="hidden lg:flex space-x-2"> 
+
+        <nav className="hidden lg:flex space-x-2">
           {navLink('/', 'Home')}
           {navLink('/users', 'User List')}
           {navLink('/add', 'Add User')}
@@ -61,13 +63,13 @@ const Header = () => {
           {navLink('/contact', 'Contact')}
         </nav>
 
-       
+
         <nav
           className={`
             lg:hidden absolute top-0 left-0 w-full h-screen bg-violet-700/95 transition-transform duration-300 ease-in-out
             flex flex-col items-center justify-center space-y-4 text-xl
             ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}
-            z-0
+            z-50
           `}
         >
           {navLink('/', 'Home')}
